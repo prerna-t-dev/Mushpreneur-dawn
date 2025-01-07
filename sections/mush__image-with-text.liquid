@@ -1,0 +1,41 @@
+<section id="mush--image-with-text">
+    <div class="section-wrapper">
+        <div class="grid grid-cols-2 items-center gap-0">
+            <img class="w-full h-full" src="https://cdn.shopify.com/s/files/1/0569/9217/0159/files/mush--img_1.png?v=1736096467" alt="Image">
+
+            <div class="h-full py-5 bg-black text-white text-center px-[108px] flex justify-center items-center">
+                <div class="flex flex-col {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in {% endif %}">
+                    <h2 class="text-[48px] !text-white font-bold leading-tight tracking-[-2.4px] mb-[34px]" >
+                        The Productivity Boost <br/>You've Been Craving
+                    </h2>
+                    <p class="text-[28px] mb-[34px] tracking-[-1.4px] leading-[1.1]">
+                        Crafted for those who think big and do bigger, Day Shrooms delivers clean, steady energy to power through your day without jitters or midday slumps. Perfect for early mornings, intense focus sessions, and every productive moment in between.
+                    </p>
+
+                    <a href="#" class="btn btn-tertiary mx-auto block">
+                        TRY DAY SHROOMS
+                    </a>
+                </div>
+                
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+{%  schema  %} 
+    {
+        "name": "Image With Text",
+        "class": "section--image-with-text",
+        "settings": [
+
+        ],
+        "presets": [
+            {
+                "name": "Image With Text"
+            }
+        ]
+    } 
+{% endschema %}

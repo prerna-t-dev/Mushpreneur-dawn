@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer component {
+    /* ================ MUSHPRENEUR CUSTOM SETTINGS ================= */
+
+    html{
+        color: #000000 !important;
+
+
+    }
+
+    body {
+        -webkit-font-smoothing: antialiased;
+        color: #000000 !important;
+      }
+
+    .text-white {
+        color: #FFFFFF !important
+    }
+
+
+    /* ===== Buttons ===== */
+    .btn{
+        @apply px-12 py-5 w-fit text-white text-xl font-extrabold rounded-[32px] cursor-pointer whitespace-nowrap uppercase;
+        letter-spacing: -0.8px;
+    }
+
+    .btn-primary{
+        background: var(--Primary-CTA-BG, linear-gradient(90deg, #F2008C 0%, #E74936 100%));
+        color: #ffffff !important;
+    }
+
+    .btn-secondary{
+        background: #000000;
+        color: #ffffff !important;
+    }
+
+    .btn-tertiary{
+        @apply bg-orange;
+        color: #ffffff !important;
+    }
+
+
+
+
+
+    /* ===== Footer Newsletter ===== */
+    .footer-newsletter-input{
+        appearance: none !important;
+    }
+
+    .footer-newsletter-input::placeholder {
+        color: #ffffff !important;
+    }
+
+    .footer-newsletter-input:active,
+    .footer-newsletter-input:focus,
+    .footer-newsletter-input:focus-visible{
+        border: none !important;
+        outline: none !important;
+        box-shadow: none !important; 
+        -webkit-box-shadow: none !important;
+    }
+
+    .space-dot{
+        width: 6px;
+        height: 6px;
+        background-color: white;
+        border-radius: 50%;
+    }
+}
