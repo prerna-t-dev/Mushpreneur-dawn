@@ -6,15 +6,36 @@
 @layer component {
     /* ================ MUSHPRENEUR CUSTOM SETTINGS ================= */
 
-    html{
+
+    html {
         color: #000000 !important;
+        overflow: overlay; /* Makes the scrollbar appear on top of the content */
+        scrollbar-gutter: stable; /* Ensures a stable layout and prevents reflow when scrollbars appear/disappear */
+      }
+      
+      /* Optional: Style the scrollbar to make it less intrusive */
+      html::-webkit-scrollbar {
+        width: 8px; /* Adjust width of the scrollbar */
+      }
+      
+      html::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.5); /* Custom color for the scrollbar thumb */
+        border-radius: 4px; /* Rounded corners */
+      }
+      
+      html::-webkit-scrollbar-thumb:hover {
+        background: rgba(0, 0, 0, 0.7); /* Darker thumb on hover */
+      }
 
-
-    }
+      html::-webkit-scrollbar-track {
+        background: transparent; /* Transparent background for the track */
+      }
+      
 
     body {
         -webkit-font-smoothing: antialiased;
         color: #000000 !important;
+        /* overflow-x: hidden; */
       }
 
     .text-white {
@@ -24,8 +45,9 @@
 
     /* ===== Buttons ===== */
     .btn{
-        @apply px-12 py-5 w-fit text-white text-xl font-extrabold rounded-[32px] cursor-pointer whitespace-nowrap uppercase;
-        letter-spacing: -0.8px;
+        @apply px-7 py-3 w-fit text-white font-extrabold rounded-[32px] cursor-pointer whitespace-nowrap uppercase;
+        font-size: 12px;
+        letter-spacing: -0.578px;
     }
 
     .btn-primary{
@@ -43,7 +65,15 @@
         color: #ffffff !important;
     }
 
+    @media (min-width: 1280px) {
 
+        .btn{
+            @apply px-12 py-5 text-xl rounded-[32px];
+            letter-spacing: -0.8px;
+        }
+
+
+    }
 
 
 
@@ -66,9 +96,17 @@
     }
 
     .space-dot{
-        width: 6px;
-        height: 6px;
+        width: 2px;
+        height: 2px;
         background-color: white;
         border-radius: 50%;
+    }
+
+
+    @media (min-width: 1280px) {
+        .space-dot{
+            width: 6px;
+            height: 6px;
+        }
     }
 }

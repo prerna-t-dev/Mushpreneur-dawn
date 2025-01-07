@@ -1,14 +1,20 @@
 <section id="mush--image-with-text">
     <div class="section-wrapper">
-        <div class="grid grid-cols-2 items-center gap-0">
-            <img class="w-full h-full" src="https://cdn.shopify.com/s/files/1/0569/9217/0159/files/mush--img_1.png?v=1736096467" alt="Image">
+        <div class="grid grid-cols-1 xl:grid-cols-2 items-center gap-0">
 
-            <div class="h-full py-5 bg-black text-white text-center px-[108px] flex justify-center items-center">
+
+            <div class="order-2 xl:order-1">
+                <img class="w-full h-full hidden xl:block" src="https://cdn.shopify.com/s/files/1/0569/9217/0159/files/mush--img_1.png?v=1736096467" alt="Coffee Image - Desktop">
+
+                <img src="https://cdn.shopify.com/s/files/1/0569/9217/0159/files/mush--img_2_1.png?v=1736236898" alt="Coffee Image - Mobile" class="xl:block">
+            </div>
+
+            <div class="h-full py-[64px] xl:py-5 bg-black text-white text-center px-7 xl:px-[108px] flex justify-center items-center">
                 <div class="flex flex-col {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in {% endif %}">
-                    <h2 class="text-[48px] !text-white font-bold leading-tight tracking-[-2.4px] mb-[34px]" >
+                    <h2 class="text-[32px] xl:text-[48px] !text-white font-bold leading-[1.1] tracking-[-1.6px] xl:tracking-[-2.4px] mb-2 xl:mb-[34px]" >
                         The Productivity Boost <br/>You've Been Craving
                     </h2>
-                    <p class="text-[28px] mb-[34px] tracking-[-1.4px] leading-[1.1]">
+                    <p class="text-sm xl:text-[28px] mb-5 xl:mb-[34px] tracking-[-0.689px] xl:tracking-[-1.4px] leading-[1.1] px-3 lg:px-0">
                         Crafted for those who think big and do bigger, Day Shrooms delivers clean, steady energy to power through your day without jitters or midday slumps. Perfect for early mornings, intense focus sessions, and every productive moment in between.
                     </p>
 
