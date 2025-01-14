@@ -626,7 +626,7 @@ class ModalDialog extends HTMLElement {
   show(opener) {
     this.openedBy = opener;
 
-    console.log('Opened by', openedBy)
+    console.log('Opened by', this.openedBy)
     const popup = this.querySelector('.template-popup');
     document.body.classList.add('overflow-hidden');
     this.setAttribute('open', '');
